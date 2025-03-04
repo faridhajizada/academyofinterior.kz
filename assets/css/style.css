@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  background: #1a1f24;
   padding: 15px 0;
 }
 header .header-logo img {
@@ -35,7 +35,7 @@ header .navbar .nav-links li {
   list-style: none;
 }
 header .navbar .nav-links li a {
-  color: var(--text-color);
+  color: #f0b040;
   font-weight: 700;
   font-size: 20px;
   padding: 10px 0;
@@ -46,7 +46,7 @@ header .navbar .nav-links li a:hover {
   color: black;
 }
 header .call-meet button {
-  background: var(--primary-color);
+  background: #f0b040;
   border: none;
   color: var(--text-color);
   font-size: 16px;
@@ -249,21 +249,29 @@ header .menu-toggle span {
   opacity: 0.6;
 }
 
-#product .container {
+#product .container,
+#blog .container,
+#project .container {
   padding: 20px 0;
 }
-#product .product-title {
+#product .product-title,
+#blog .product-title,
+#project .product-title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
   background: var(--bg-product-color);
   padding: 20px 0;
 }
-#product .product-title h2 {
+#product .product-title h2,
+#blog .product-title h2,
+#project .product-title h2 {
   color: white;
   margin: 0;
 }
-#product .product-card {
+#product .product-card,
+#blog .product-card,
+#project .product-card {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -273,40 +281,66 @@ header .menu-toggle span {
   cursor: pointer;
   height: 100%;
 }
-#product .product-card:hover {
+#product .product-card:hover,
+#blog .product-card:hover,
+#project .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-#product .product-card .product-img {
+#product .product-card .product-img,
+#blog .product-card .product-img,
+#project .product-card .product-img {
   width: 100%;
   height: 200px;
   overflow: hidden;
 }
-#product .product-card .product-img img {
+#product .product-card .product-img img,
+#blog .product-card .product-img img,
+#project .product-card .product-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-#product .product-card:hover .product-img img {
+#product .product-card:hover .product-img img,
+#blog .product-card:hover .product-img img,
+#project .product-card:hover .product-img img {
   transform: scale(1.1);
 }
-#product .product-card .product-info {
+#product .product-card .product-info,
+#blog .product-card .product-info,
+#project .product-card .product-info {
   padding: 15px;
   text-align: center;
 }
-#product .product-card .product-info h3 {
+#product .product-card .product-info h3,
+#blog .product-card .product-info h3,
+#project .product-card .product-info h3 {
   font-size: 18px;
   font-weight: 600;
   color: #333;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
 }
-#product .product-card .product-info p {
+#product .product-card .product-info p,
+#blog .product-card .product-info p,
+#project .product-card .product-info p {
   font-size: 14px;
   color: #777;
   margin-bottom: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
 }
-#product .product-card .product-info button {
-  background: var(--bg-product-color);
+#product .product-card .product-info button,
+#blog .product-card .product-info button,
+#project .product-card .product-info button {
+  background: #f0b040;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -349,4 +383,41 @@ header .menu-toggle span {
   margin-top: 30px;
   font-size: 16px;
   color: #bbb;
+}
+
+#about-projects {
+  background: #f9f9f9;
+  padding: 60px 0;
+}
+#about-projects .product-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  background: var(--bg-product-color);
+  padding: 20px 0;
+}
+#about-projects .product-title h2 {
+  color: white;
+  margin: 0;
+}
+#about-projects .about-text {
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+#about-projects .about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+#about-projects .btn {
+  display: inline-block;
+  background: #f0b040;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
 }
