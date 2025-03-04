@@ -2,6 +2,7 @@
   --primary-color: #8a6530;
   --secondary-color: #c8a46b;
   --text-color: #fff;
+  --bg-product-color: #343233;
 }
 
 body {
@@ -18,6 +19,7 @@ header {
 }
 header .header-logo img {
   max-width: 70px;
+  height: 50px;
 }
 header .navbar {
   display: flex;
@@ -41,21 +43,18 @@ header .navbar .nav-links li a {
   transition: color 0.3s ease-in-out;
 }
 header .navbar .nav-links li a:hover {
-  color: var(--secondary-color);
+  color: black;
 }
 header .call-meet button {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   border: none;
   color: var(--text-color);
   font-size: 16px;
   font-weight: 700;
-  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-}
-header .call-meet button:hover {
-  background: var(--primary-color);
+  border: 2px solid var(--primary-color);
 }
 header .menu-toggle {
   display: none;
@@ -87,4 +86,229 @@ header .menu-toggle span {
   header .menu-toggle {
     display: flex;
   }
+}
+
+#slider .slider {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  padding: 0;
+}
+#slider .slider li {
+  position: relative;
+  background: none no-repeat center/cover;
+  min-height: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+  transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#slider .slider li:hover {
+  flex-grow: 5;
+}
+#slider .slider li:hover h1 {
+  transform: rotateZ(0) translateY(0);
+}
+#slider .slider li:hover p {
+  transform: translateY(calc((100% + 2rem) * -1)) rotateZ(0);
+}
+#slider .slider a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#slider .slider h1 {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  margin: 0;
+  font-size: 3rem;
+  color: #febb02;
+  text-transform: uppercase;
+  transform-origin: left top;
+  transform: rotateZ(90deg) translateY(-1em);
+  font-family: sans-serif;
+  transition: 0.25s cubic-bezier(0.35, 0, 0, 1);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+#slider .slider p {
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  font-family: sans-serif;
+  transform-origin: left top;
+  transform: translateY(0) rotateZ(90deg);
+  transition: 0.5s cubic-bezier(0.35, 0, 0, 1);
+  width: 25em;
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#slider .slider .one {
+  background-image: url(https://germanstudio.az/images/1-main.jpg);
+}
+#slider .slider .one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  /* background-image: linear-gradient(15deg, #006fbc, rgba(0, 111, 188, 0) 75%, rgba(0, 111, 188, 0) 99%); */
+  background-color: #1f1e1c;
+  opacity: 0.6;
+}
+#slider .slider .two {
+  background-image: url(https://germanstudio.az/images/garderob.jpg);
+}
+#slider .slider .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  /* background-image: linear-gradient(15deg, #006fbc, rgba(0, 111, 188, 0) 75%, rgba(0, 111, 188, 0) 99%); */
+  background-color: #1f1e1c;
+  opacity: 0.6;
+}
+#slider .slider .three {
+  background-image: url(https://germanstudio.az/images/tv.jpg);
+}
+#slider .slider .three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  /* background-image: linear-gradient(15deg, #006fbc, rgba(0, 111, 188, 0) 75%, rgba(0, 111, 188, 0) 99%); */
+  background-color: #1f1e1c;
+  opacity: 0.6;
+}
+#slider .slider .four {
+  background-image: url(https://germanstudio.az/images/last.jpg);
+}
+#slider .slider .four::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  /* background-image: linear-gradient(15deg, #006fbc, rgba(0, 111, 188, 0) 75%, rgba(0, 111, 188, 0) 99%); */
+  background-color: #1f1e1c;
+  opacity: 0.6;
+}
+#slider .slider .five {
+  background-image: url(https://germanstudio.az/images/german.jpg);
+}
+#slider .slider .five::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  /* background-image: linear-gradient(15deg, #006fbc, rgba(0, 111, 188, 0) 75%, rgba(0, 111, 188, 0) 99%); */
+  background-color: #1f1e1c;
+  opacity: 0.6;
+}
+#slider .slider .six {
+  background-image: url(https://germanstudio.az/images/slide-6.jpg?123);
+}
+#slider .slider .six::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  /* background-image: linear-gradient(15deg, #006fbc, rgba(0, 111, 188, 0) 75%, rgba(0, 111, 188, 0) 99%); */
+  background-color: #1f1e1c;
+  opacity: 0.6;
+}
+
+#product .container {
+  padding: 20px 0;
+}
+#product .product-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  background: var(--bg-product-color);
+  padding: 20px 0;
+}
+#product .product-title h2 {
+  color: white;
+  margin: 0;
+}
+#product .product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+}
+#product .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#product .product-card .product-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+#product .product-card .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+#product .product-card:hover .product-img img {
+  transform: scale(1.1);
+}
+#product .product-card .product-info {
+  padding: 15px;
+  text-align: center;
+}
+#product .product-card .product-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+#product .product-card .product-info p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+#product .product-card .product-info button {
+  background: var(--bg-product-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
