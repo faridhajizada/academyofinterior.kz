@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-color: #8a6530;
   --secondary-color: #c8a46b;
@@ -362,6 +361,11 @@ header .menu-toggle span {
   font-size: 40px;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  #benefits h2 {
+    font-size: 24px;
+  }
+}
 #benefits .benefit-item {
   text-align: center;
   max-width: 180px;
@@ -393,7 +397,6 @@ header .menu-toggle span {
 
 #about-projects {
   background: #f9f9f9;
-  padding: 60px 0;
 }
 #about-projects .product-title {
   text-align: center;
@@ -479,8 +482,6 @@ header .menu-toggle span {
 .footer .callback-btn:hover {
   background: #f0b040;
 }
-
-/* Адаптивность */
 @media (max-width: 768px) {
   .footer .container {
     flex-direction: column;

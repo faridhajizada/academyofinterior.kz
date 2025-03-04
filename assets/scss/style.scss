@@ -382,13 +382,11 @@ header {
     margin-bottom: 30px;
   }
 
-  .row {
-    // display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // gap: 20px;
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+    }
   }
-
   .benefit-item {
     text-align: center;
     max-width: 180px;
@@ -435,7 +433,7 @@ header {
     }
   }
   background: #f9f9f9;
-  padding: 60px 0;
+  // padding: 60px 0;
 
   .about-text {
     margin: auto;
@@ -554,13 +552,13 @@ header {
   .callback-btn:hover {
     background: #f0b040;
   }
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-  .footer .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
   }
+}
+#test {
 }
