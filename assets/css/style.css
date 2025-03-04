@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-color: #8a6530;
   --secondary-color: #c8a46b;
@@ -254,6 +255,11 @@ header .menu-toggle span {
 #project .container {
   padding: 20px 0;
 }
+#product .row,
+#blog .row,
+#project .row {
+  margin: 0;
+}
 #product .product-title,
 #blog .product-title,
 #project .product-title {
@@ -420,4 +426,65 @@ header .menu-toggle span {
   border-radius: 5px;
   text-decoration: none;
   transition: 0.3s;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+.footer .footer-section {
+  text-align: center;
+}
+.footer .footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer .footer-section p {
+  font-size: 16px;
+  color: #bbb;
+}
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.footer .social-icons a {
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+.footer .social-icons a:hover {
+  color: #f0b040;
+}
+.footer .callback-btn {
+  background: #f0b040;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .callback-btn:hover {
+  background: #f0b040;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
