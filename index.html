@@ -51,10 +51,43 @@
     </header>
     <main>
       <section id="test">
-        <div class="contsiner">
-          <div class="row"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="flex-container">
+              <div class="flex-slide home">
+                <div class="flex-title flex-title-home">КУХОННАЯ МЕБЕЛЬ</div>
+                <div class="flex-about flex-about-home">
+                  <p>
+                    GERMAN STUDİO предоставляет кухонную мебель известной
+                    немецкой фабрики BEECK, а также мебель изготовленную из
+                    немецкой фурнитуры и материалов на собственном производстве
+                  </p>
+                </div>
+              </div>
+              <div class="flex-slide about">
+                <div class="flex-title">ГАРДЕРОБНЫЕ КОМНАТЫ</div>
+                <div class="flex-about">
+                  <p>
+                    Точный дизайн и установка гардеробов и гардеробных комнат с
+                    использованием немецких механизмов
+                  </p>
+                </div>
+              </div>
+              <div class="flex-slide work">
+                <div class="flex-title">ТВ СТЕНДЫ</div>
+                <div class="flex-about">
+                  <p>Listing relevant snippets of work:</p>
+                </div>
+              </div>
+              <div class="flex-slide contact">
+                <div class="flex-title">МЕЖКОМНАТНЫЕ ДВЕРИ</div>
+                <div class="flex-about"><p>Use the contact form below</p></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- 
       <section id="slider">
         <div class="container-fluid">
           <div class="row">
@@ -120,7 +153,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <section id="product">
         <!-- Полная ширина для заголовка -->
         <div class="container-fluid product-title">
@@ -558,6 +591,42 @@
         </div>
       </div>
     </footer>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
+    <script>
+      (function () {
+        $(".flex-container").waitForImages(
+          function () {
+            $(".spinner").fadeOut();
+          },
+          $.noop,
+          true
+        );
+
+        $(".flex-slide").each(function () {
+          $(this).hover(
+            function () {
+              $(this).find(".flex-title").css({
+                transform: "rotate(0deg)",
+                top: "10%",
+              });
+              $(this).find(".flex-about").css({
+                opacity: "1",
+              });
+            },
+            function () {
+              $(this).find(".flex-title").css({
+                transform: "rotate(90deg)",
+                top: "15%",
+              });
+              $(this).find(".flex-about").css({
+                opacity: "0",
+              });
+            }
+          );
+        });
+      })();
+    </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
