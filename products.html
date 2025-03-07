@@ -10,60 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <style>
-      .product-card {
-        margin: 20px 0;
-        background-color: #333;
-        color: #f0b040;
-        border: 2px solid #f0b040;
-        border-radius: 10px;
-        overflow: hidden;
-        transition: transform 0.3s;
-        position: relative; /* Added */
-        a {
-          text-decoration: none;
-          color: black;
-        }
-      }
-      .product-card:hover {
-        transform: translateY(-10px);
-      }
-      .product-img {
-        height: 200px;
-        object-fit: cover;
-      }
-      .product-title {
-        font-weight: bold;
-        font-size: 18px;
-      }
-      .section-title {
-        font-weight: bold;
-        font-size: 40px;
-        color: #333;
-      }
-      /* New styling for the button */
-      .details-btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #f0b040;
-        /* color: white; */
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        display: none; /* Initially hidden */
-      }
-      .product-card:hover .details-btn {
-        display: block; /* Show the button when hovering */
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -84,12 +31,36 @@
               <nav>
                 <div class="navbar">
                   <ul class="nav-links">
-                    <li><a href="/products.html">Товары</a></li>
-                    <li><a href="/services.html">Услуги</a></li>
-                    <li><a href="/about.html">О Нас</a></li>
-                    <li><a href="/blogs.html">Новости</a></li>
-                    <li><a href="/contacts.html">Контакты</a></li>
-                    <li><a href="#">Kz</a></li>
+                    <!-- <li><a href="/products.html">Товары</a></li> -->
+                    <li class="nav-item">
+                      <a href="/products.html" class="nav-link">Товары</a>
+                      <!-- Dropdown Categories -->
+                      <ul class="dropdown">
+                        <li><a href="/category1.html">Категория 1</a></li>
+                        <li><a href="/category2.html">Категория 2</a></li>
+                        <li><a href="/category3.html">Категория 3</a></li>
+                        <li><a href="/category4.html">Категория 4</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a href="/services.html" class="nav-link"> Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/about.html" class="nav-link">О Нас</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/blogs.html" class="nav-link">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="/contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">RU</a>
+                      <ul class="dropdown">
+                        <li><a href="/category1.html">KZ</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
               </nav>
@@ -190,7 +161,7 @@
     </header>
 
     <main>
-      <section class="products">
+      <section id="products-page">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
