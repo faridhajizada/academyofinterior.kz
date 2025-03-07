@@ -146,34 +146,88 @@
                   </div>
                   <div class="offcanvas-body">
                     <ul class="nav flex-column">
-                      <li class="nav-item" style="margin-top: 100px">
+                      <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Главная</a>
+                      </li>
+                      <li class="nav-item dropdown">
                         <a
-                          class="nav-link active"
-                          aria-current="page"
-                          href="./index.html"
-                          >Главная</a
+                          href="#"
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >Товары</a
                         >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="/category1.html" class="dropdown-item"
+                              >Категория 1</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/category2.html" class="dropdown-item"
+                              >Категория 2</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/category3.html" class="dropdown-item"
+                              >Категория 3</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/category4.html" class="dropdown-item"
+                              >Категория 4</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          href="#"
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >Услуги</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="/category1.html" class="dropdown-item"
+                              >Услуги 1</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/category2.html" class="dropdown-item"
+                              >Услуги 2</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          href="#"
+                          class="nav-link dropdown-toggle"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          >О Нас</a
+                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="/category1.html" class="dropdown-item"
+                              >Нас 1</a
+                            >
+                          </li>
+                          <li>
+                            <a href="/category2.html" class="dropdown-item"
+                              >Нас 2</a
+                            >
+                          </li>
+                        </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./products.html">Товары </a>
-                      </li>
-
-                      <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Услуги</a>
+                        <a href="./blogs.html" class="nav-link">Новости</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./project.html">Проекты</a>
+                        <a href="./contacts.html" class="nav-link">Контакты</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./about.html">О Нас</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./blogs.html">Новости</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./contacts.html">Контакты</a>
-                      </li>
-
                       <li>
                         <div class="nav-item">
                           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -892,6 +946,29 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document
+        .querySelectorAll(".dropdown-toggle")
+        .forEach(function (dropdownToggle) {
+          dropdownToggle.addEventListener("click", function (e) {
+            e.preventDefault(); // Останавливаем переход по ссылке
+            const dropdownMenu = dropdownToggle.nextElementSibling; // Получаем меню, следующее за элементом с классом dropdown-toggle
+
+            // Закрываем другие dropdown-меню
+            document
+              .querySelectorAll(".dropdown-menu")
+              .forEach(function (menu) {
+                if (menu !== dropdownMenu) {
+                  menu.style.display = "none";
+                }
+              });
+
+            // Переключаем текущее меню
+            dropdownMenu.style.display =
+              dropdownMenu.style.display === "block" ? "none" : "block";
+          });
+        });
+    </script>
     <!-- <script src="./assets/js/script.js"></script> -->
   </body>
 </html>

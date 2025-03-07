@@ -3020,7 +3020,7 @@ input[type=submit].btn-block {
     margin-left: 0
 }
 
-.dropdown-menu {
+/* .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -3038,7 +3038,7 @@ input[type=submit].btn-block {
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .15);
     border-radius: .25rem
-}
+} */
 
 .dropdown-menu-right {
     right: 0;
@@ -4240,9 +4240,9 @@ input[type=submit].btn-block {
         -ms-flex-direction: row;
         flex-direction: row
     }
-    .navbar-expand-xl .navbar-nav .dropdown-menu {
+    /* .navbar-expand-xl .navbar-nav .dropdown-menu {
         position: absolute
-    }
+    } */
     .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: .5rem;
         padding-left: .5rem
@@ -4281,9 +4281,9 @@ input[type=submit].btn-block {
     flex-direction: row
 }
 
-.navbar-expand .navbar-nav .dropdown-menu {
+/* .navbar-expand .navbar-nav .dropdown-menu {
     position: absolute
-}
+} */
 
 .navbar-expand .navbar-nav .nav-link {
     padding-right: .5rem;
@@ -32503,9 +32503,9 @@ span.bypostauthor {
     display: none
 }
 
-.show {
+/* .show {
     display: block
-}
+} */
 
 .invisible {
     visibility: hidden
