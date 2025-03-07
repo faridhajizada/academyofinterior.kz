@@ -18,8 +18,6 @@ header {
   background: #1a1f24;
   padding: 15px 0;
 
-
-
   .navbar {
     display: flex;
     justify-content: center;
@@ -656,13 +654,39 @@ header {
     flex-grow: 3;
   }
 
+  .home,
+  .about,
+  .work,
+  .bath,
+  .interior,
+  .contact {
+    height: 100vh !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+  }
   .home {
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(https://germanstudio.az/images/1-main.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+  }
+  .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://germanstudio.az/images/garderob.jpg);
+  }
+  .work {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://germanstudio.az/images/tv.jpg);
+  }
+  .contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://germanstudio.az/images/last.jpg);
+  }
+  .bath {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://germanstudio.az/images/german.jpg);
+  }
+  .interior {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://germanstudio.az/images/slide-6.jpg?123);
   }
 
   @media screen and (min-width: 768px) {
@@ -763,27 +787,5 @@ header {
     100% {
       opacity: 0;
     }
-  }
-
-  .about {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(https://germanstudio.az/images/garderob.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-  .work {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(https://germanstudio.az/images/tv.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-  }
-  .contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(https://germanstudio.az/images/last.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
 }

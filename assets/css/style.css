@@ -577,12 +577,33 @@ header .menu-toggle span {
   -webkit-flex-grow: 3;
   flex-grow: 3;
 }
+#test .home,
+#test .about,
+#test .work,
+#test .bath,
+#test .interior,
+#test .contact {
+  height: 100vh !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+}
 #test .home {
-  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/1-main.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+}
+#test .about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/garderob.jpg);
+}
+#test .work {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/tv.jpg);
+}
+#test .contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/last.jpg);
+}
+#test .bath {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/german.jpg);
+}
+#test .interior {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/slide-6.jpg?123);
 }
 @media screen and (min-width: 768px) {
   #test .home {
@@ -676,22 +697,4 @@ header .menu-toggle span {
   100% {
     opacity: 0;
   }
-}
-#test .about {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/garderob.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-#test .work {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/tv.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-}
-#test .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://germanstudio.az/images/last.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
 }
