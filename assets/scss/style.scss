@@ -15,87 +15,88 @@ body {
 }
 
 header {
-  background: #1a1f24;
-  padding: 15px 0;
+  .desktop {
+    background: #1a1f24;
+    padding: 15px 0;
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-
-    .nav-links {
+    .navbar {
       display: flex;
-      gap: 20px;
-      padding: 0;
-      margin: 0;
+      justify-content: center;
 
-      li {
-        list-style: none;
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
 
-        a {
-          color: #f0b040;
-          font-weight: 700;
-          font-size: 20px;
-          padding: 10px 0;
-          text-decoration: none;
-          transition: color 0.3s ease-in-out;
+        li {
+          list-style: none;
 
-          &:hover {
-            // color: black;
-            color: white;
+          a {
+            color: #f0b040;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 10px 0;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+              color: white;
+            }
           }
         }
       }
     }
-  }
 
-  .call-meet button {
-    // background: var(--primary-color);
-    background: #f0b040;
-    border: none;
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: 700;
-    // padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    border: 2px solid var(--primary-color);
-  }
-
-  // Бургер-меню для мобильной версии
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-
-    span {
-      width: 25px;
-      height: 3px;
-      background: var(--text-color);
-      margin: 5px 0;
+    .call-meet button {
+      background: #f0b040;
+      border: none;
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
       transition: 0.3s ease-in-out;
+      border: 2px solid var(--primary-color);
     }
   }
-
   @media (max-width: 768px) {
-    .navbar .nav-links {
+    .desktop {
       display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background: var(--primary-color);
+    }
+  }
+  .mobile {
+    background: var(--bg-product-color);
+    .offcanvas {
+      background: var(--bg-product-color);
+    }
+    .nav-item {
+      // margin-top: 100px;
       text-align: center;
-      padding: 10px 0;
+      a {
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 0 10px;
+      }
     }
-
-    .navbar .nav-links.active {
+    .mmm {
       display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
-
-    .menu-toggle {
+    .mobile-menu {
       display: flex;
+      justify-content: flex-end;
+      button {
+        background-color: #f0b040;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .mobile {
+      display: none;
     }
   }
 }

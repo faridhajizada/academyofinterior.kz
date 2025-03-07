@@ -13,24 +13,24 @@ body {
   box-sizing: border-box;
 }
 
-header {
+header .desktop {
   background: #1a1f24;
   padding: 15px 0;
 }
-header .navbar {
+header .desktop .navbar {
   display: flex;
   justify-content: center;
 }
-header .navbar .nav-links {
+header .desktop .navbar .nav-links {
   display: flex;
   gap: 20px;
   padding: 0;
   margin: 0;
 }
-header .navbar .nav-links li {
+header .desktop .navbar .nav-links li {
   list-style: none;
 }
-header .navbar .nav-links li a {
+header .desktop .navbar .nav-links li a {
   color: #f0b040;
   font-weight: 700;
   font-size: 20px;
@@ -38,10 +38,10 @@ header .navbar .nav-links li a {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
-header .navbar .nav-links li a:hover {
+header .desktop .navbar .nav-links li a:hover {
   color: white;
 }
-header .call-meet button {
+header .desktop .call-meet button {
   background: #f0b040;
   border: none;
   color: var(--text-color);
@@ -52,35 +52,42 @@ header .call-meet button {
   transition: 0.3s ease-in-out;
   border: 2px solid var(--primary-color);
 }
-header .menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-header .menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background: var(--text-color);
-  margin: 5px 0;
-  transition: 0.3s ease-in-out;
-}
 @media (max-width: 768px) {
-  header .navbar .nav-links {
+  header .desktop {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: var(--primary-color);
-    text-align: center;
-    padding: 10px 0;
   }
-  header .navbar .nav-links.active {
-    display: flex;
-  }
-  header .menu-toggle {
-    display: flex;
+}
+header .mobile {
+  background: var(--bg-product-color);
+}
+header .mobile .offcanvas {
+  background: var(--bg-product-color);
+}
+header .mobile .nav-item {
+  text-align: center;
+}
+header .mobile .nav-item a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+header .mobile .mmm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .mobile .mobile-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+header .mobile .mobile-menu button {
+  background-color: #f0b040;
+}
+@media screen and (min-width: 768px) {
+  header .mobile {
+    display: none;
   }
 }
 

@@ -5,52 +5,457 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academy Of Interior</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link
+      href="css/main.css%3Fid=4.css"
+      type="text/css"
+      data-template-style="true"
+      rel="stylesheet"
+    /> -->
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-2 col-6">
-            <div class="header-logo">
-              <img src="./assets/img/logo2.png" class="img-fluid" alt="logo" />
-            </div>
-          </div>
-          <div class="col-md-8 col-6">
-            <nav>
-              <div class="navbar">
-                <ul class="nav-links">
-                  <li><a href="#">Товары</a></li>
-                  <li><a href="#">Услуги</a></li>
-                  <li><a href="#">О Нас</a></li>
-                  <li><a href="#">Контакты</a></li>
-                  <li><a href="#">Kz</a></li>
-                </ul>
+      <section class="desktop">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-2 col-6">
+              <div class="header-logo">
+                <img
+                  src="./assets/img/logo2.png"
+                  class="img-fluid"
+                  alt="logo"
+                />
               </div>
-            </nav>
-            <div class="menu-toggle" id="mobile-menu">
-              <span></span>
-              <span></span>
-              <span></span>
             </div>
-          </div>
-          <div class="col-md-2 d-none d-md-block">
-            <div class="call-meet">
-              <button>Назначить встречу</button>
+            <div class="col-md-8 col-6">
+              <nav>
+                <div class="navbar">
+                  <ul class="nav-links">
+                    <li><a href="#">Товары</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О Нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Kz</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-2 d-none d-md-block">
+              <div class="call-meet">
+                <button>Назначить встречу</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="mobile">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="header-logo">
+                <img src="./assets/img/logo.png" class="img-fluid" alt="logo" />
+              </div>
+            </div>
+            <div class="col-6 mmm">
+              <div class="mobile-menu">
+                <div class="menu-btn">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
+                    Menu
+                  </button>
+                </div>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                      Offcanvas right
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                      <li class="nav-item" style="margin-top: 100px">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li>
+                        <div class="nav-item">
+                          <a href="#"><i class="fab fa-facebook"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                          <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
-      <section id="test">
+      <!-- <style>
+        .show {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -20px;
+          background: #000;
+          color: #fff;
+          border-radius: 5px;
+          border: 0;
+          border-bottom: 2px solid #c0392b;
+          cursor: pointer;
+          font-size: 15px;
+        }
+        .show:hover {
+          background: #c0392b;
+        }
+        .show:active {
+          transform: scale(0.9);
+        }
+        .close {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 35px;
+          height: 30px;
+          background: #000;
+          color: #fff;
+          cursor: pointer;
+          border: 0;
+        }
+        .close-2 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 35px;
+          height: 30px;
+          background: #000;
+          color: #fff;
+          cursor: pointer;
+          border: 0;
+        }
+        .mask {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 50;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.7s;
+        }
+        .modal {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          width: 400px;
+          height: 300px;
+          margin-left: -200px;
+          margin-top: -150px;
+          background: #000;
+          z-index: 100;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.5s ease-out;
+          transform: translateY(45px);
+        }
+        .active {
+          visibility: visible;
+          opacity: 1;
+        }
+        .active + .modal {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .mask-2 {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 50;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.7s;
+        }
+        .modal-2 {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          width: 400px;
+          height: 300px;
+          margin-left: -200px;
+          margin-top: -150px;
+          background: #000;
+          z-index: 100;
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.5s ease-out;
+          transform: translateY(45px);
+        }
+        .active-2 {
+          visibility: visible;
+          opacity: 1;
+        }
+        .active-2 + .modal-2 {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      </style>
+      <style>
+        @media (min-width: 992px) {
+          .slider {
+            height: 88vh;
+          }
+        }
+      </style>
+      <div class="slider">
+        <div class="container-fluid p-0 h-100">
+          <div class="row no-gutters h-100">
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 h-100"
+              id="bx_3218110189_8025"
+            >
+              <div
+                class="slide__item slide__item--1 slide__static"
+                style="
+                  background-image: url(./images/1-main.jpg);
+                  background-position: 60%;
+                "
+              >
+                <div class="slide__text">
+                  <h2 class="slide__title">
+                    <span>MƏTBƏX MEBELİ</span>
+                  </h2>
+                  <p class="slide__desc">
+                    GERMAN STUDIO Almaniyanın məşhur BEECK mətbəx mebelləri̇ni̇ ,
+                    həmçi̇ni̇n alman mexanizmləri i̇lə təchi̇z olunmuş öz
+                    fabri̇kamızda i̇stehsal olunan GERMAN STUDİO MƏTBƏX
+                    mebelləri̇ni̇ təkli̇f edi̇r
+                  </p>
+                  <a
+                    href="az/mehsullar/stoermer-metbex-mebelleri.html"
+                    class="btn btn-primary btn-outline btn-lg"
+                    >BEECK MƏTBƏX MEBELLƏRİ</a
+                  >
+                  <a
+                    href="az/mehsullar/german-studio-metbex-mebelleri.html"
+                    class="btn btn-primary btn-outline btn-lg"
+                    >GERMAN STUDİO MƏTBƏX MEBELLƏRİ</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 h-100"
+              id="bx_3218110189_"
+            >
+              <div class="slide_dynamic">
+                <div
+                  class="slide__item slide__item--2 dynamic__item"
+                  style="
+                    background-image: url(./images/garderob.jpg);
+                    background-position: 65%;
+                  "
+                >
+                  <div class="slide__preview">
+                    <span
+                      style="display: inline-block; margin-right: 10px"
+                      class="1"
+                      >QARDEROBLAR</span
+                    >
+                    <span
+                      style="display: block; margin-right: 10px"
+                      class="1"
+                    ></span>
+                  </div>
+                  <div class="slide__text">
+                    <h2 class="slide__title">
+                      <span
+                        style="display: inline-block; margin-right: 10px"
+                        class="1"
+                        >QARDEROBLAR</span
+                      >
+                      <span
+                        style="display: inline-block; margin-right: 10px"
+                        class="1"
+                      >
+                      </span>
+                    </h2>
+                    <p class="slide__desc">
+                      Qarderob və qarderob otaqlarının d&uuml;zg&uuml;n
+                      layihələndirilməsi və alman mexanizmlərindən istifadə
+                      etməklə hazırlanması və quraşdırılması
+                    </p>
+                    <a
+                      href="az/mehsullar/qarderob.html"
+                      class="btn btn-primary btn-outline btn-lg"
+                      >ƏTRAFLI OXU</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="slide__item slide__item--3 dynamic__item"
+                  style="background-image: url(./images/tv.jpg)"
+                >
+                  <div class="slide__preview">
+                    <span>TV STENDLƏR</span>
+                  </div>
+                  <div class="slide__text">
+                    <h2 class="slide__title">
+                      <span>TV STENDLƏR</span>
+                    </h2>
+                    <p class="slide__desc">
+                      İstənilən &ouml;l&ccedil;&uuml;də və 300-dən artıq rəng
+                      se&ccedil;imindən ibarət TV stend və modellər
+                    </p>
+                    <a
+                      href="az/mehsullar/tv-stend.html"
+                      class="btn btn-primary btn-outline btn-lg"
+                      >ƏTRAFLI OXU</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="slide__item slide__item--4 dynamic__item"
+                  style="
+                    background-image: url(./images/last.jpg);
+                    background-position: 0%;
+                  "
+                >
+                  <div class="slide__preview">
+                    <span>OTAQ QAPILARI</span>
+                  </div>
+                  <div class="slide__text">
+                    <h2 class="slide__title">
+                      <span>OTAQ QAPILARI</span>
+                    </h2>
+                    <p class="slide__desc">
+                      Otaq qapılarının istənilən &ouml;l&ccedil;&uuml;də İtaliya
+                      və Almaniya mexanizm və dəstəklərdən istifadə etməklə
+                      istehsalı
+                    </p>
+                    <a
+                      href="az/mehsullar/otaq-qapilari.html"
+                      class="btn btn-primary btn-outline btn-lg"
+                      >ƏTRAFLI OXU</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="slide__item slide__item--4 dynamic__item"
+                  style="background-image: url(./images/german.jpg)"
+                >
+                  <div class="slide__preview">
+                    <span
+                      style="display: inline-block; margin-right: 10px"
+                      class="1"
+                      >HAMAM OTAĞI MEBELİ</span
+                    >
+                  </div>
+                  <div class="slide__text door">
+                    <h2 class="slide__title">
+                      <span
+                        style="display: inline-block; margin-right: 10px"
+                        class="1"
+                        >HAMAM OTAĞI MEBELİ</span
+                      >
+                    </h2>
+                    <p class="slide__desc">
+                      &Ouml;zəl &ouml;l&ccedil;&uuml; və d&uuml;zg&uuml;n
+                      proporsiyalarla layihələndirilmiş və istifadəsi tam rahat
+                      olan hamam otağı mebelləri
+                    </p>
+                    <a
+                      href="az/mehsullar/hamam-mebeli.html"
+                      class="btn btn-primary btn-outline btn-lg"
+                      >ƏTRAFLI OXU</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="slide__item slide__item--4 slide__item--6 dynamic__item"
+                  style="background-image: url(./images/slide-6.jpg%3F123)"
+                >
+                  <div class="slide__preview">
+                    <span
+                      style="display: inline-block; margin-right: 10px"
+                      class="1"
+                      >İNTERYER HƏLLƏRİ</span
+                    >
+                  </div>
+                  <div class="slide__text door">
+                    <h2 class="slide__title">
+                      <span
+                        style="display: inline-block; margin-right: 10px"
+                        class="1"
+                        >İNTERYER HƏLLƏRİ</span
+                      >
+                    </h2>
+                    <p class="slide__desc">
+                      İnteryer həllərini xidmətini sifariş edərək, bir xəyal
+                      qurduğunuz evin mükəmməl şəkilini alacaqsınız, hansında
+                      ki, kiçik detallara qədər bütün arzular nəzərə alınacaq.
+                    </p>
+                    <a
+                      href="az/mehsullar/interyer-helleri.html"
+                      class="btn btn-primary btn-outline btn-lg"
+                      >ƏTRAFLI OXU</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <section id="test">
         <div class="container-fluid">
           <div class="row">
             <div class="flex-container">
@@ -100,8 +505,8 @@
             </div>
           </div>
         </div>
-      </section>
-      
+      </section> -->
+
       <section id="product">
         <!-- Полная ширина для заголовка -->
         <div class="container-fluid product-title">
@@ -541,40 +946,11 @@
     </footer>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
-    <script>
-      (function () {
-        $(".flex-container").waitForImages(
-          function () {
-            $(".spinner").fadeOut();
-          },
-          $.noop,
-          true
-        );
-
-        $(".flex-slide").each(function () {
-          $(this).hover(
-            function () {
-              $(this).find(".flex-title").css({
-                transform: "rotate(0deg)",
-                top: "20%",
-              });
-              $(this).find(".flex-about").css({
-                opacity: "1",
-              });
-            },
-            function () {
-              $(this).find(".flex-title").css({
-                transform: "rotate(90deg)",
-                top: "2%",
-              });
-              $(this).find(".flex-about").css({
-                opacity: "0",
-              });
-            }
-          );
-        });
-      })();
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
