@@ -44,13 +44,13 @@ header .desktop .navbar .nav-links li a:hover {
 header .desktop .call-meet button {
   background: #f0b040;
   border: none;
-  color: var(--text-color);
   font-size: 16px;
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   border: 2px solid var(--primary-color);
+  padding: 10px 20px;
 }
 @media (max-width: 768px) {
   header .desktop {
@@ -65,6 +65,9 @@ header .mobile .offcanvas {
 }
 header .mobile .nav-item {
   text-align: center;
+}
+header .mobile .nav-item .nav-link {
+  padding: 4px 0;
 }
 header .mobile .nav-item a {
   color: var(--secondary-color);
@@ -703,5 +706,11 @@ header .mobile .mobile-menu button {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider {
+    height: 88vh;
   }
 }

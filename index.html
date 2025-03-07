@@ -15,12 +15,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- <link
+    <link
       href="css/main.css%3Fid=4.css"
       type="text/css"
       data-template-style="true"
       rel="stylesheet"
-    /> -->
+    />
   </head>
   <body>
     <header>
@@ -29,21 +29,23 @@
           <div class="row align-items-center">
             <div class="col-md-2 col-6">
               <div class="header-logo">
-                <img
-                  src="./assets/img/logo2.png"
-                  class="img-fluid"
-                  alt="logo"
-                />
+                <a href="/">
+                  <img
+                    src="./assets/img/logo2.png"
+                    class="img-fluid"
+                    alt="logo"
+                /></a>
               </div>
             </div>
             <div class="col-md-8 col-6">
               <nav>
                 <div class="navbar">
                   <ul class="nav-links">
-                    <li><a href="#">Товары</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">О Нас</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/products">Товары</a></li>
+                    <li><a href="/services">Услуги</a></li>
+                    <li><a href="/about">О Нас</a></li>
+                    <li><a href="/blogs">Новости</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
                     <li><a href="#">Kz</a></li>
                   </ul>
                 </div>
@@ -100,21 +102,26 @@
                     <ul class="nav flex-column">
                       <li class="nav-item" style="margin-top: 100px">
                         <a class="nav-link active" aria-current="page" href="#"
-                          >Home</a
+                          >Главная</a
                         >
                       </li>
+
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Услуги</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Проекты</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
+                        <a class="nav-link" href="#">О Нас</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Новости</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                      </li>
+
                       <li>
                         <div class="nav-item">
                           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -133,127 +140,6 @@
       </section>
     </header>
     <main>
-      <!-- <style>
-        .show {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-top: -20px;
-          background: #000;
-          color: #fff;
-          border-radius: 5px;
-          border: 0;
-          border-bottom: 2px solid #c0392b;
-          cursor: pointer;
-          font-size: 15px;
-        }
-        .show:hover {
-          background: #c0392b;
-        }
-        .show:active {
-          transform: scale(0.9);
-        }
-        .close {
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 35px;
-          height: 30px;
-          background: #000;
-          color: #fff;
-          cursor: pointer;
-          border: 0;
-        }
-        .close-2 {
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 35px;
-          height: 30px;
-          background: #000;
-          color: #fff;
-          cursor: pointer;
-          border: 0;
-        }
-        .mask {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 50;
-          visibility: hidden;
-          opacity: 0;
-          transition: 0.7s;
-        }
-        .modal {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          width: 400px;
-          height: 300px;
-          margin-left: -200px;
-          margin-top: -150px;
-          background: #000;
-          z-index: 100;
-          visibility: hidden;
-          opacity: 0;
-          transition: 0.5s ease-out;
-          transform: translateY(45px);
-        }
-        .active {
-          visibility: visible;
-          opacity: 1;
-        }
-        .active + .modal {
-          visibility: visible;
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        .mask-2 {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 50;
-          visibility: hidden;
-          opacity: 0;
-          transition: 0.7s;
-        }
-        .modal-2 {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          width: 400px;
-          height: 300px;
-          margin-left: -200px;
-          margin-top: -150px;
-          background: #000;
-          z-index: 100;
-          visibility: hidden;
-          opacity: 0;
-          transition: 0.5s ease-out;
-          transform: translateY(45px);
-        }
-        .active-2 {
-          visibility: visible;
-          opacity: 1;
-        }
-        .active-2 + .modal-2 {
-          visibility: visible;
-          opacity: 1;
-          transform: translateY(0);
-        }
-      </style>
-      <style>
-        @media (min-width: 992px) {
-          .slider {
-            height: 88vh;
-          }
-        }
-      </style>
       <div class="slider">
         <div class="container-fluid p-0 h-100">
           <div class="row no-gutters h-100">
@@ -454,7 +340,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- <section id="test">
         <div class="container-fluid">
           <div class="row">
@@ -500,7 +386,13 @@
               </div>
               <div class="flex-slide interior">
                 <div class="flex-title">ИНТЕРЬЕРНЫЕ РЕШЕНИЯ</div>
-                <div class="flex-about"><p>Заказав услугу «интерьерные решения» вы получите идеальную картинку дома мечты, в котором будут учтены все пожелания до мелочей.</p></div>
+                <div class="flex-about">
+                  <p>
+                    Заказав услугу «интерьерные решения» вы получите идеальную
+                    картинку дома мечты, в котором будут учтены все пожелания до
+                    мелочей.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -508,12 +400,9 @@
       </section> -->
 
       <section id="product">
-        <!-- Полная ширина для заголовка -->
         <div class="container-fluid product-title">
           <h2>Кухни Beeck в German Studio</h2>
         </div>
-
-        <!-- Контейнер для карточек -->
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-6">
@@ -944,13 +833,13 @@
         </div>
       </div>
     </footer>
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/script.js"></script> -->
   </body>
 </html>
