@@ -435,9 +435,10 @@ header .mobile .dropdown-item:hover {
   margin: 40px 0 20px 0;
   text-align: center;
 }
-#product .btn-gold button,
-#blog .btn-gold button,
-#project .btn-gold button {
+#product .btn-gold a,
+#blog .btn-gold a,
+#project .btn-gold a {
+  text-decoration: none;
   background: #1a1f24;
   color: white;
   border: none;
@@ -445,6 +446,11 @@ header .mobile .dropdown-item:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+}
+#product .btn-gold a:hover,
+#blog .btn-gold a:hover,
+#project .btn-gold a:hover {
+  background: #f0b040;
 }
 
 #benefits {

@@ -447,7 +447,8 @@ header {
   .btn-gold {
     margin: 40px 0 20px 0;
     text-align: center;
-    button {
+    a {
+      text-decoration: none;
       background: #1a1f24;
       color: white;
       border: none;
@@ -455,6 +456,9 @@ header {
       border-radius: 5px;
       cursor: pointer;
       transition: 0.3s;
+    }
+    a:hover {
+      background: #f0b040;
     }
   }
 }
