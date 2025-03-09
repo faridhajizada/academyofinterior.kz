@@ -861,3 +861,16 @@ header .mobile .dropdown-item:hover {
 #partners .partner {
   margin: 10px 0;
 }
+
+#contacts i {
+  color: var(--secondary-color);
+}
+#contacts .btn-gold {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
