@@ -1,6 +1,7 @@
 :root {
   --primary-color: #8a6530;
   --secondary-color: #c8a46b;
+  --gold-color: #f0b040;
   --text-color: #fff;
 
   --bg-product-color: #343233;
@@ -964,15 +965,22 @@ header {
 
 #contacts {
   i {
-    color: var(--secondary-color);
+    color: var(--gold-color);
   }
-  .btn-gold {
-    background-color: var(--secondary-color);
+  button {
+    background-color: var(--gold-color);
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
+  }
+  .btn-gold {
+    width: 100%;
+  }
+  p {
+    margin: 24px 0;
   }
 }

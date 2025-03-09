@@ -2,6 +2,7 @@
 :root {
   --primary-color: #8a6530;
   --secondary-color: #c8a46b;
+  --gold-color: #f0b040;
   --text-color: #fff;
   --bg-product-color: #343233;
 }
@@ -863,14 +864,21 @@ header .mobile .dropdown-item:hover {
 }
 
 #contacts i {
-  color: var(--secondary-color);
+  color: var(--gold-color);
 }
-#contacts .btn-gold {
-  background-color: var(--secondary-color);
+#contacts button {
+  background-color: var(--gold-color);
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  width: 100%;
+}
+#contacts .btn-gold {
+  width: 100%;
+}
+#contacts p {
+  margin: 24px 0;
 }
