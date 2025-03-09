@@ -357,11 +357,15 @@ header {
   .row {
     margin: 0;
   }
+  .col-md-3,
+  .col-6 {
+    margin: 20px 0;
+  }
   .product-title {
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    background: var(--bg-product-color);
+    background: #1a1f24;
     padding: 20px 0;
     h2 {
       color: white;
@@ -370,7 +374,6 @@ header {
   }
 
   .product-card {
-    // margin: 20px 0;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -439,6 +442,19 @@ header {
           //   background: darken(var(--bg-product-color), 10%);
         }
       }
+    }
+  }
+  .btn-gold {
+    margin: 40px 0 20px 0;
+    text-align: center;
+    button {
+      background: #1a1f24;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
     }
   }
 }

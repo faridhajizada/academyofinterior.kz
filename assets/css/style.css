@@ -329,13 +329,21 @@ header .mobile .dropdown-item:hover {
 #project .row {
   margin: 0;
 }
+#product .col-md-3,
+#product .col-6,
+#blog .col-md-3,
+#blog .col-6,
+#project .col-md-3,
+#project .col-6 {
+  margin: 20px 0;
+}
 #product .product-title,
 #blog .product-title,
 #project .product-title {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
-  background: var(--bg-product-color);
+  background: #1a1f24;
   padding: 20px 0;
 }
 #product .product-title h2,
@@ -421,6 +429,24 @@ header .mobile .dropdown-item:hover {
   padding: 10px 15px;
   border-radius: 5px;
 }
+#product .btn-gold,
+#blog .btn-gold,
+#project .btn-gold {
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+#product .btn-gold button,
+#blog .btn-gold button,
+#project .btn-gold button {
+  background: #1a1f24;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 #benefits {
   background: #1a1f24;
   color: #fff;
