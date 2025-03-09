@@ -850,3 +850,14 @@ header .mobile .dropdown-item:hover {
 #products-page .product-card:hover .details-btn {
   display: block; /* Show the button when hovering */
 }
+
+#partners {
+  padding: 40px 0;
+}
+#partners .title {
+  font-weight: bold;
+  text-align: center;
+}
+#partners .partner {
+  margin: 10px 0;
+}

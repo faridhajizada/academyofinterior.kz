@@ -111,13 +111,13 @@ header {
     .offcanvas {
       background: var(--bg-product-color);
     }
-  
+
     .nav-item {
       .nav-link {
         padding: 4px 0;
       }
       text-align: center;
-  
+
       a {
         color: var(--secondary-color);
         text-decoration: none;
@@ -126,22 +126,22 @@ header {
         margin: 0 10px;
       }
     }
-  
+
     .mmm {
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
-  
+
     .mobile-menu {
       display: flex;
       justify-content: flex-end;
-  
+
       button {
         background-color: #f0b040;
       }
     }
-  
+
     .dropdown-menu {
       display: none;
       padding: 10px 0;
@@ -154,12 +154,12 @@ header {
       list-style: none;
       border-radius: 5px;
     }
-  
+
     .dropdown-toggle:focus + .dropdown-menu,
     .dropdown-toggle:active + .dropdown-menu {
       display: block;
     }
-  
+
     .dropdown-item {
       color: white;
       padding: 10px;
@@ -168,7 +168,7 @@ header {
       font-weight: 500;
       display: block;
       transition: background-color 0.3s ease-in-out;
-  
+
       &:hover {
         background-color: #f0b040;
       }
@@ -948,5 +948,16 @@ header {
   }
   .product-card:hover .details-btn {
     display: block; /* Show the button when hovering */
+  }
+}
+
+#partners {
+  padding: 40px 0;
+  .title {
+    font-weight: bold;
+    text-align: center;
+  }
+  .partner {
+    margin: 10px 0;
   }
 }
